@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSnap - Previsão</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+
+    <main class="app-container">
+        <div class="weather-card">
+            
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Digite o nome da cidade">
+                <button id="search-btn">Buscar</button>
+            </div>
+
+            <div id="weather-display" class="hidden">
+                <header class="location-info">
+                    <h1 id="city-name">--</h1>
+                    <p id="current-date">--</p> 
+                </header>
+
+                <section class="main-stats">
+                    <div id="main-icon" class="weather-icon-large"></div>
+                    <div class="temp-wrapper">
+                        <span id="temp-main">0</span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <p id="weather-desc">--</p>
+                </section>
+
+                <div id="suggestion-card">
+                    Carregando sugestões...
+                </div>
+
+                <section class="extra-details">
+                    <div class="detail-item">
+                        <i data-lucide="wind"></i>
+                        <span id="wind-speed">0 km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="droplets"></i>
+                        <span id="humidity">0%</span>
+                    </div>
+                </section>
+
+                <footer class="forecast-section">
+                    <h3>Próximos Dias</h3>
+                    <div id="forecast-container" class="forecast-grid">
+                        </div>
+                </footer>
+            </div>
+
+            <div id="empty-state">
+                <i data-lucide="cloud-sun" class="icon-placeholder"></i>
+                <p>Busque uma cidade para começar</p>
+            </div>
+
+            <div class="next-days">
+                <div class="">
+                    <h2>Teste</h2>
+                    <p>Teste</p>
+                </div>
+
+                <div class="">
+                    <h2>Teste</h2>
+                    <p>Teste</p>
+                </div>
+
+                <div class="">
+                    <h2>Teste</h2>
+                    <p>Teste</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
